@@ -41,8 +41,8 @@ export default {
           type:'querySuccess',
           payload:{
             list:data.data,
-            total:data.page.total,
-            current:data.page.current
+            total:data.total,
+            current:data.current
           }
         })
       }
@@ -68,16 +68,19 @@ export default {
         loading: false,
         list: [
           {
+            id:1,
             name: '张三1',
             age: 23,
             address: '成都',
           },
           {
+            id:2,
             name: '李四',
             age: 24,
             address: '杭州',
           },
           {
+            id:3,
             name: '王五',
             age: 25,
             address: '上海',
